@@ -53,6 +53,12 @@ for(i in 1:50){
 # bioskop
 # bengkel
 
+# yang belum:
+# pasar
+# SRC
+# indomaret
+# alfamart
+
 temp_link = temp_link %>% unique()
 
-save(temp_link,file = "makassar.rda")
+save(temp_link,file = "sisaan poi.rda")
