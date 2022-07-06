@@ -1,4 +1,8 @@
-setwd("~/Documents/Gmaps Scraper")
+# ubuntu OS
+# setwd("~/Documents/Gmaps Scraper")
+
+# windows
+setwd("E:/DATA SCIENCE/Google Maps Scraper")
 
 library(dplyr)
 library(rvest)
@@ -31,7 +35,7 @@ scrape_google_maps = function(url){
   return(output)
 }
 
-load("makassar.rda")
+load("sisaan poi.rda")
 
 # template data
 hasil = vector("list",length(temp_link))
@@ -41,4 +45,4 @@ for(i in 1:length(temp_link)){
   print(i)
 }
 
-save(hasil,temp_link,file = "makassar.rda")
+save(hasil,temp_link,file = "poi clean.rda")
